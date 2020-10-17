@@ -36,15 +36,6 @@ void loop() {
   k_temperature = T0 * B / (B + T0*log(tr/R0));
   c_temperature = k_temperature - TERM_DIFF;
 
-//  Serial.print("ADC signal ");
-//  Serial.println(adc_signal);
-//
-//  Serial.print("Signal in volst ");
-//  Serial.println(adc_to_volt);
-//
-//  Serial.print("Thermo resistance ");
-//  Serial.println(tr);
-
   Serial.print("Temperature ");
   Serial.println(c_temperature);
   
